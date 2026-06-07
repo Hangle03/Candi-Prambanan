@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal Candi Prambanan</title>
+    <style>
+        /* Pengaturan Dasar & Scroll Halus */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://i.pinimg.com/736x/79/9a/91/799a91095e0ed4b443a114ed38927ffd.jpg') no-repeat center center/cover;
+            color: #333;
+        }
+        
+        /* Bagian Header / Spanduk */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://i.pinimg.com/originals/0c/53/9a/0c539a7b16d083fcb17002c67b61acb1.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        .hero h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin-bottom: 0.5rem;
+            color: #e0e0e0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Pembungkus Konten Utama */
+        .container {
+            max-width: 900px;
+            margin: -2rem auto 2rem auto;
+            padding: 0 1rem;
+            position: relative;
+        }
+
+        /* Desain Kotak Konten (Kartu) */
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            scroll-margin-top: 20px; /* Jarak atas saat di-scroll */
+        }
+        .card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+            font-size: 1.5rem;
+        }
+        .card h4 {
+            color: #1a73e8;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Daftar & Tabel */
+        ul.tujuan-list, ul.materi-list {
+            padding-left: 20px;
+        }
+        ul.tujuan-list li, ul.materi-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Menu Navigasi (Tombol Kotak) */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .menu-item {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .menu-item:hover {
+            background-color: #1557b0;
+            transform: translateY(-3px);
+        }
+
+        /* Fakta Menarik */
+        .fakta {
+            background-color: #fff3e0;
+            border-left: 5px solid #ff9800;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .fakta h3 {
+            border-bottom: none;
+            color: #e65100;
+        }
+
+        /* Soal Kuis */
+        .soal {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        .soal p {
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        /* Tombol Kembali ke Atas */
+        .back-to-top {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        .back-to-top:hover {
+            background-color: #1a252f;
+        }
+
+        /* Bagian Bawah (Footer) */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .container { margin-top: 1rem; }
+            .card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Banner Atas -->
+    <header class="hero" id="atas">
+        <h2>Pembelajaran IPS - Sejarah & Budaya</h2>
+        <h1>Mengenal Candi Prambanan</h1>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        
+        <!-- Pengantar -->
+        <section class="card">
+            <h3>Selamat Datang di Media Pembelajaran!</h3>
+            <p>Halo, siswa-siswi sekalian! Selamat datang di halaman pembelajaran sejarah dan budaya nusantara. Pada materi kali ini, kita akan menjelajahi salah satu mahakarya arsitektur kuno terbesar di Indonesia, yaitu <strong>Candi Prambanan</strong>.</p>
+        </section>
+
+        <!-- Menu Navigasi Materi -->
+        <section class="menu-grid">
+            <a href="#materi-sejarah" class="menu-item">📚 Sejarah Pembangunan</a>
+            <a href="#materi-arsitektur" class="menu-item">🏛️ Arsitektur & Relief</a>
+            <a href="#materi-legenda" class="menu-item">👸 Legenda Roro Jonggrang</a>
+            <a href="#materi-kuis" class="menu-item">📝 Kuis & Latihan Soal</a>
+        </section>
+
+        <hr style="border: 0; height: 1px; background-color: #ddd; margin: 2rem 0;">
+
+        <!-- MATERI 1: SEJARAH -->
+        <section id="materi-sejarah" class="card">
+            <h3>📚 Sejarah Pembangunan Candi Prambanan</h3>
+            <p>Candi Prambanan diperkirakan mulai dibangun pada pertengahan abad ke-9 Masehi oleh <strong>Rakai Pikatan</strong>, raja dari Wangsa Sanjaya (Kerajaan Mataram Kuno). Pembangunan ini kemudian dilanjutkan secara besar-besaran oleh raja-raja berikutnya seperti Rakai Balitung.</p>
+            
+            <h4>Tujuan Pembangunan</h4>
+            <p>Pembangunan candi ini memiliki dua tujuan utama:</p>
+            <ul class="materi-list">
+                <li>Sebagai bentuk penghormatan dan pemujaan kepada Dewa Siwa (dikenal juga dengan nama <em>Siwagrha</em> atau Rumah Siwa).</li>
+                <li>Sebagai penanda kejayaan Wangsa Sanjaya yang beragama Hindu, sekaligus menyaingi kemegahan Candi Borobudur dan Candi Sewu yang dibangun oleh Wangsa Syailendra yang beragama Buddha.</li>
+            </ul>
+
+            <h4>Penemuan Kembali</h4>
+            <p>Pada masa lalu, pusat kerajaan Mataram Kuno pindah ke Jawa Timur akibat letusan dahsyat Gunung Merapi. Candi Prambanan pun terbengkalai dan perlahan runtuh akibat gempa bumi. Candi ini baru ditemukan kembali dalam bentuk reruntuhan oleh seorang penjelajah asal Belanda bernama <strong>C.A. Lons</strong> pada tahun 1733. Proses pemugaran (perbaikan) secara serius baru dimulai pada tahun 1930-an dan candi utamanya selesai dipugar pada tahun 1953.</p>
+            
+            <a href="#atas" class="back-to-top">⬆ Kembali ke Atas</a>
+        </section>
+
+        <!-- MATERI 2: ARSITEKTUR -->
+        <section id="materi-arsitektur" class="card">
+            <h3>🏛️ Arsitektur & Relief Candi</h3>
+            <p>Arsitektur Candi Prambanan mengikuti pedoman tata ruang Hindu (Wastu Sastra) dengan bentuk bangunan yang tinggi dan ramping. Kompleks candi ini terbagi menjadi tiga halaman (zona), melambangkan alam semesta dalam kepercayaan Hindu:</p>
+            <ul class="materi-list">
+                <li><strong>Bhurloka (Halaman Bawah):</strong> Alam tempat manusia hidup yang masih terikat oleh hawa nafsu.</li>
+                <li><strong>Bhuwarloka (Halaman Tengah):</strong> Alam tempat manusia mulai mensucikan diri dan melihat cahaya kebenaran.</li>
+                <li><strong>Swarloka (Halaman Inti):</strong> Alam para dewa yang suci. Di sinilah terletak candi-candi utama.</li>
+            </ul>
+
+            <h4>Candi Utama (Trimurti)</h4>
+            <p>Di halaman inti terdapat tiga candi terbesar yang didedikasikan untuk Trimurti:</p>
+            <ul class="materi-list">
+                <li><strong>Candi Siwa:</strong> Candi terbesar dan tertinggi (47 meter). Di dalamnya terdapat arca Siwa Mahadewa dan arca Durga Mahisasuramardini.</li>
+                <li><strong>Candi Brahma:</strong> Terletak di sebelah selatan Candi Siwa.</li>
+                <li><strong>Candi Wisnu:</strong> Terletak di sebelah utara Candi Siwa.</li>
+            </ul>
+
+            <h4>Relief Ramayana</h4>
+            <p>Salah satu daya tarik terbesar Candi Prambanan adalah ukiran relief pada dinding candi. Jika kita berjalan mengelilingi lorong Candi Siwa dan Candi Brahma searah jarum jam (pradaksina), kita bisa membaca kisah epik <strong>Ramayana</strong> yang menceritakan perjuangan Rama menyelamatkan Sinta dari tangan Rahwana.</p>
+
+            <a href="#atas" class="back-to-top">⬆ Kembali ke Atas</a>
+        </section>
+
+        <!-- MATERI 3: LEGENDA -->
+        <section id="materi-legenda" class="card">
+            <h3>👸 Legenda Roro Jonggrang</h3>
+            <p>Masyarakat lokal sering menyebut Candi Prambanan sebagai <em>Candi Roro Jonggrang</em> karena adanya cerita rakyat (legenda) yang sangat terkenal terkait asal-usul candi ini.</p>
+            
+            <p>Kisah ini menceritakan tentang seorang pangeran sakti bernama <strong>Bandung Bondowoso</strong> yang jatuh cinta pada seorang putri cantik bernama <strong>Roro Jonggrang</strong>. Roro Jonggrang tidak ingin menikahi pria yang telah mengalahkan ayahnya, maka ia mengajukan syarat yang mustahil: <em>"Buatkan aku 1.000 candi hanya dalam waktu satu malam."</em></p>
+            
+            <p>Dengan bantuan pasukan jin, Bandung Bondowoso hampir menyelesaikan tugas tersebut. Roro Jonggrang yang panik kemudian menyuruh dayang-dayang desa untuk menumbuk padi dan membakar jerami agar ayam berkokok, seolah-olah fajar telah tiba. Mendengar suara ayam, para jin lari ketakutan.</p>
+
+            <p>Bandung Bondowoso yang mengetahui kelicikan tersebut menjadi sangat marah. Ia baru menyelesaikan 999 candi. Untuk melengkapi candi ke-1.000, ia mengutuk Roro Jonggrang menjadi batu. Masyarakat percaya bahwa patung batu <strong>Durga Mahisasuramardini</strong> yang ada di ruangan utara Candi Siwa adalah perwujudan dari Roro Jonggrang.</p>
+
+            <a href="#atas" class="back-to-top">⬆ Kembali ke Atas</a>
+        </section>
+
+        <!-- MATERI 4: KUIS -->
+        <section id="materi-kuis" class="card">
+            <h3>📝 Kuis & Latihan Soal</h3>
+            <p>Uji pemahamanmu tentang Candi Prambanan dengan menjawab pertanyaan di bawah ini!</p>
+
+            <div class="soal">
+                <p>1. Candi Prambanan dibangun pada masa kerajaan apa?</p>
+                <input type="radio" name="soal1"> a. Kerajaan Majapahit<br>
+                <input type="radio" name="soal1"> b. Kerajaan Mataram Kuno<br>
+                <input type="radio" name="soal1"> c. Kerajaan Singasari
+            </div>
+
+            <div class="soal">
+                <p>2. Candi Prambanan didedikasikan untuk tiga dewa utama (Trimurti) dalam agama Hindu. Candi manakah yang bangunannya paling besar dan tertinggi?</p>
+                <input type="radio" name="soal2"> a. Candi Wisnu<br>
+                <input type="radio" name="soal2"> b. Candi Brahma<br>
+                <input type="radio" name="soal2"> c. Candi Siwa
+            </div>
+
+            <div class="soal">
+                <p>3. Siapakah tokoh putri dalam legenda yang dikutuk menjadi candi ke-1.000?</p>
+                <input type="radio" name="soal3"> a. Roro Mendut<br>
+                <input type="radio" name="soal3"> b. Ken Dedes<br>
+                <input type="radio" name="soal3"> c. Roro Jonggrang
+            </div>
+
+            <button style="margin-top: 10px; padding: 10px 20px; background-color: #1a73e8; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Kirim Jawaban</button>
+            <br>
+            <a href="#atas" class="back-to-top">⬆ Kembali ke Atas</a>
+        </section>
+
+        <!-- Fakta Menarik -->
+        <section class="card fakta">
+            <h3>Tahukah Kamu? 💡</h3>
+            <p>Meskipun sering disebut memiliki "1.000 candi" karena legenda Roro Jonggrang, kompleks Candi Prambanan aslinya "hanya" memiliki 240 candi yang terdiri dari candi utama, candi wahana, candi apit, candi kelir, candi patok, dan ratusan candi perwara.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Media Pembelajaran IPS. Dibuat untuk tujuan pendidikan.</p>
+    </footer>
+
+</body>
+</html>
